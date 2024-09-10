@@ -35,7 +35,7 @@ const TodoList = () => {
   return (
     <>
       <div className="todo-container">
-        <h1 className="title">My Todo List</h1>
+        <h1 className="title">My Todo Lists</h1>
         <div className="input-container">
           <input
             type="text"
@@ -72,7 +72,7 @@ const TodoList = () => {
               <input
                 type="text"
                 className="list-input"
-                placeholder="Add List"
+                placeholder="Add to List"
                 value={listInputs[index] || ""}
                 onChange={(e) => handleListInputChange(index, e.target.value)}
               />
@@ -80,7 +80,7 @@ const TodoList = () => {
                 className="add-list-button"
                 onClick={() => handleAddList(index)}
               >
-                Add List
+                Add to List
               </button>
             </div>
           </div>
